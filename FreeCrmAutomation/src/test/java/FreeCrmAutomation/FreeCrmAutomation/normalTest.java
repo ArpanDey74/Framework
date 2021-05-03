@@ -19,6 +19,8 @@ public class normalTest {
 			driver = new ChromeDriver();
 			driver.manage().window().maximize();
 			driver.manage().timeouts().pageLoadTimeout(20, TimeUnit.SECONDS);
+			//new line added
+			driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 			driver.navigate().to("http://www.google.com");
 			//driver.findElement(By.xpath("q"));
 	 }
